@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTH3</title>
+    <link rel="stylesheet" href="baiTh3.css">
+</head>
+<body>
+    <!-- Phần header -->
+    <div id = "header">
+        <!-- logo -->
+        <div class="header-item1">
+            <img src="https://eduplus.edu.vn/wp-content/uploads/2020/11/106345100_3698519970174938_6594183448287008765_o.jpg" alt="logo" width="60px">
+        </div>
+        <!-- Nội dung -->
+        <div class="header-item2">
+            <h2>BẢN ĐỒ VIỆT NAM</h2>
+            <div id="thông_tin">
+                <p><b>Người thực hiện: </b>Tập thể ĐHQS58&nbsp;</p>
+                <p><b>Giáo viên hướng dẫn: </b>Gv: Phan Quốc Yên&nbsp;</p>
+                <p><b>Đơn vị: </b>c458&nbsp;</p>
+            </div>
+        </div>
+        <!-- đăng nhập -->
+        <div class="header-item3">
+            <div class="item3">
+                <label for="name">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="item3">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+    <!-- Phần menu -->
+    <div id="menu">
+        <ol class="menu_body">
+            <li class="menu_item"><u>Trang chủ</u></li>
+            <li class="menu_item"><u>Phân tích không gian</u></li>
+            <li class="menu_item"><u>Báo cáo</u></li>
+            <li class="menu_item"><u>Xếp hạng</u></li>
+            <li class="menu_item"><u>Hướng dẫn</u></li>
+        </ol>
+    </div>
+    <!-- Phần nội dung -->
+    <div id="content">
+        <!-- Bên trái -->
+        <div id="content_left">
+            <video controls loop>
+                <source src="video.mp4" type="video/mp4">
+                <track src="phude.vtt"  srclang="vi" label="Tiếng Việt"></track>
+            </video>
+        </div>
+        <!-- Bên phải -->
+        <div id="content_right">
+            <img src="https://maisonoffice.vn/wp-content/uploads/2024/01/1-danh-sach-cac-tinh-mien-bac-cap-nhat-moi-nhat.jpg" 
+             usemap="#vietnam-map" height="600px" >
+            <map name="vietnam-map">
+                <!-- Hà Nội -->
+                <area shape="poly" coords="491,414,500,405,496,398,502,383,512,383,519,389,520,397,519,407,518,417,529,423,528,430,514,439,515,449,514,455,519,461,521,470,526,474,516,473,511,478,504,476,504,481,492,488,483,464,474,448,467,443,456,430,444,431,438,407,445,400,450,390,455,397,461,407,476,407" href="#" alt="Hà Nội" onclick="showProvince('Hà Nội')">
+                <!-- Hải Phòng-->
+                <area shape="poly" coords="604,428,620,435,596,439,592,450,587,461,577,469,580,480,586,483,601,482,608,483,615,475,618,470,618,459,618,448" href="#" alt="Hải Phòng" onclick="showProvince('Hải Phòng')">
+                <!-- Hải Dương -->
+                <area shape="poly" coords="575,405,583,401,583,417,603,425,600,433,595,441,590,452,587,464,575,469,557,469,547,458,545,445,552,433,562,429,564,413,566,400" href="#" alt="Hải Dương" onclick="showProvince('Hải Dương')">
+                <!-- Hòa Bình -->
+                <area shape="poly" coords="448,412,464,414,473,426,487,441,492,465,510,481,499,482,498,488,492,487,491,493,475,493,440,483,425,466,408,465,394,453,392,441,406,444,411,432,396,402,413,410,424,416,437,419,447,421" href="#" alt="Hòa Bình" onclick="showProvince('Hòa Bình')">
+                <!-- Vĩnh Phúc -->
+                <area shape="poly" coords="455,363,459,385,478,392,490,400,499,390,497,371,474,343,460,348,449,343,444,349" href="#" alt="Vĩnh Phúc" onclick="showProvince('Vĩnh Phúc')">
+                <!-- Phú Thọ -->
+                <area shape="poly" coords="406,345,394,357,394,380,385,386,392,413,403,426,423,437,430,435,438,439,446,438,442,407,448,399,446,392,456,388,455,377,443,365,437,352,430,345,419,335" href="#" alt="Phú Thọ" onclick="showProvince('Phú Thọ')">
+                <!-- Bắc Ninh -->
+                <area shape="poly" coords="519,400,520,416,529,423,530,429,547,435,561,431,560,414,549,405,534,404,530,396" href="#" alt="Bắc Ninh" onclick="showProvince('Bắc Ninh')">
+                <!-- Hưng Yên -->
+                <area shape="poly" coords="529,433,515,443,518,453,523,461,526,470,532,476,545,475,550,477,557,471,547,457,546,444,550,437" href="#" alt="Hưng Yên" onclick="showProvince('Hưng Yên')">
+            </map>
+            <script>
+                function showProvince(name) {
+                    alert("Bạn đã chọn: " + name);
+                }
+            </script>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <p>Trạng thái hiển thị thông tin: &nbsp;&nbsp;&nbsp;</p>
+        <address id="inf_footer">
+            <p><b>Hệ tọa độ: </b>WGS84</p>
+            <p><b>Tọa độ x: </b>88888</p>
+            <p><b>Tọa độ y: </b>99999</p>
+        </address>
+        <p style="float: right;"><time>11:00</time></p>
+    </div>
+</body>
+</html>

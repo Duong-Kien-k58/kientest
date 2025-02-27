@@ -1,0 +1,94 @@
+body{
+    margin: 0 100px;
+}
+#header{
+    width: 100%;
+    height: 80px;
+    background-color:#2D2D2D;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#thông_tin{
+    display: flex;
+    position: relative;
+    top: -30px;
+}
+.header-item1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header-item3{
+    display: flex;
+    margin: 10px;
+    margin-right: 40px;
+    gap: 10px;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    background-color:#007BFF ;
+    font-size: 20px;
+}
+.menu_body{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 150px;
+}
+#content{
+    width: 100%;
+    height: 600px;
+    margin: 5px 0;
+}
+#content_left{
+    width: 30%;
+    height: 600px;
+    background-color: #8dc6f7 ;
+    float: left;
+    text-align: center;
+}
+#content_right{
+    width: 70%;
+    height: 600px;
+    float: right;
+    text-align: center;
+    border: 10px red;
+    background-color: #abbfe3;
+}
+
+#footer{
+    display: flex;
+    height: 55px;
+    background-color: #007BFF;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+#inf_footer{
+    display: flex;
+    gap: 30px;
+}
+video{
+    position: relative;
+    top: 335px;
+    width: 400px;
+    margin: 20px auto;
+}
+::cue {
+    color: white; /* Màu chữ */
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    font-size: 10px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    text-shadow: 2px 2px 5px black; /* Đổ bóng chữ */
+    border-radius: 5px; /* Bo góc */
+    padding: 5px; /* Khoảng cách chữ */
+}
